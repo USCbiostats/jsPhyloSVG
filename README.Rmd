@@ -1,0 +1,58 @@
+---
+output:
+  - github_document
+  - html_document
+always_allow_html: yes
+theme: journal
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "70%"
+)
+```
+# jsPhyloSVG htmlwidget
+
+The [jsPhyloSVG](http://jsphylosvg.com) javascript library provides a neat visualization tool for phylogenetic trees. This R package, which has the same name, is a wrapper that builds an [htmlwidget](http://www.htmlwidgets.org/) that allows its use in R, including RMarkdown and Shiny. This is still work in progress.
+
+## Installation
+
+You can install jsPhyloSVG from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("USCBiostats/jsPhyloSVG")
+```
+
+## Example
+
+In the following, we present an example of usage of the widget. First, using the [ape](https://cran.r-project.org/package=ape) package, we create a random phylogenetic tree.
+
+```{r loading-packages}
+library(ape)
+library(jsPhyloSVG)
+```
+
+```{r random-tree}
+x <- rtree(10)
+```
+
+Using the `plot.ape` method, we can get a nice tree drawn with ape:
+
+```{r ape-plot}
+plot(x)
+```
+
+Using the `jsPhyloSVG` function, we can visualize the same tree but using the Javascript library of the same name, [jsPhyloSVG](http://jsphylosvg.com):
+
+
+```{r}
+jsPhyloSVG(write.tree(x), width = 500)
+```
+
+

@@ -13,7 +13,7 @@ HTMLWidgets.widget({
       renderValue: function(x) {
 
         // TODO: code to render the widget, e.g.
-        window.onload = function(){
+        // window.onload = function(){
         	YUI().use('oop', 'json-stringify', 'io-base', 'event', 'event-delegate', function(Y){
         	  phylocanvas = new Smits.PhyloCanvas(
         	    {newick: x.tree},
@@ -22,7 +22,7 @@ HTMLWidgets.widget({
         	    x.layout
         	    );
         	});
-        };
+        //};
 
       },
 
