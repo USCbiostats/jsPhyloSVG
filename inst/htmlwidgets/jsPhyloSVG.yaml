@@ -1,0 +1,10 @@
+# (uncomment to add a dependency)
+dependencies:
+  - name: jsphylosvg
+    version: 1.55
+    src: htmlwidgets/lib/jsphylosvg-1.55/
+    script:
+      - jsphylosvg-min.js
+      - raphael-min.js
+      - yui-min.js
+

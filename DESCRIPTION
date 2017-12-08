@@ -1,0 +1,19 @@
+Package: jsPhyloSVG
+Type: Package
+Title: jsPhyloSVG reader in R
+Version: 0.0.9000
+Authors@R:
+  person("George", "Vega Yon", email="g.vegayon@gmail.com", role=c("aut", "cre"))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1.9000
+Imports: 
+    htmlwidgets,
+    ape
+Suggests: 
+    knitr
+VignetteBuilder: knitr
