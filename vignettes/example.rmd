@@ -32,4 +32,7 @@ Using the `jsPhyloSVG` function, we can visualize the same tree but using the Ja
 jsPhyloSVG(write.tree(x), width = 500)
 ```
 
+```{r, fig.show='hold'}
+jsPhyloSVG(write.tree(x), width = 500, circular = FALSE)
+```
 
