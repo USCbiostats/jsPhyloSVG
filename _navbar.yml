@@ -1,9 +1,0 @@
- title: "jsPhyloSVG htmlwidget"
- type: default
- right:
-   - text: "jsPhyloSVG home"
-     href: http://www.jsphylosvg.com
-   - text: Github
-     href: https://github.com/USCBiostats/jsPhyloSVG
-   - text: USCBiostats
-     href: https://github.com/USCBiostats
